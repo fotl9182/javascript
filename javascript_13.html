@@ -2,6 +2,18 @@
 <html>
 <head>
     <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
       var day;
       switch (new Date().getDay()) {
           case 0:
@@ -26,6 +38,15 @@
               day = "Saturday";
       }
       console.log(day);
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+            //
+        }
+    }
     </script>
 </head>
 <body>
