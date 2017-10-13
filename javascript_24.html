@@ -2,6 +2,21 @@
 <html>
 <head>
     <script type="text/javascript">
+    console.log = function(msg) {
+        var ul = document.getElementById("log");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(msg));
+        ul.appendChild(li);
+    }
+
+    window.onload = function() {
+        document.getElementById("run").onclick = function() {
+            //
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
       var a = Number("1000");
       var b = Number("3.14");
       var c = Number("");
@@ -55,5 +70,14 @@
     <div>
         <ul id="log" style="list-style-type:circle"></ul>
     </div> 
+</body>
+</html>
+
+            //
+        }
+    }
+    </script>
+</head>
+<body>
 </body>
 </html>
